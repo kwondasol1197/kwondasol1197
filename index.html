@@ -1,50 +1,322 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>권다솔 포트폴리오</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>권다솔 포트폴리오</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>권다솔 포트폴리오</h1>
-        <p>2003.07.03 | 서일대 재학중 | 학번: 202207286</p>
-    </header>
 
-    <section id="about">
-        <h2>소개</h2>
-        <p>안녕하세요, 저는 20년차 시니어 개발자 경력을 가진 권다솔입니다. 주로 웹 개발과 React 기반 프로젝트를 진행해왔습니다.</p>
+  <div class="background-glow"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="badge">PORTFOLIO</div>
+
+      <h1>
+        권다솔
+      </h1>
+
+      <h2>
+        Full Stack / Mobile Developer
+      </h2>
+
+      <p class="hero-description">
+        실제 서비스를 직접 기획·개발·배포하며<br />
+        사용자 경험을 구현하는 개발자입니다.
+      </p>
+
+      <div class="hero-tags">
+        <span>React Native</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>AI Service</span>
+        <span>App Store Release</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="section-title">
+        <span>01</span>
+        <h3>About Me</h3>
+      </div>
+
+      <div class="card">
+        <p>
+          안녕하세요.<br />
+          사용자 경험을 실제 서비스로 구현하는 개발자 권다솔입니다.
+        </p>
+
+        <p>
+          중·고등학교 시절부터 앱 개발과 배포를 경험해왔으며,
+          현재는 웹과 모바일을 아우르는 서비스를 직접 기획·개발·배포하고 있습니다.
+        </p>
+
+        <p>
+          단순 기능 구현보다 실제 사용자들이 사용할 수 있는 수준의
+          서비스 완성도를 중요하게 생각하며,
+          App Store / Play Store 배포 경험과 외주 프로젝트 경험을 기반으로
+          실무적인 개발 역량을 쌓아왔습니다.
+        </p>
+
+        <p>
+          현재는 AI 기반 웹·앱 자동 생성 플랫폼인 Zentra를 개발하며
+          AI 자동화, 서비스 배포, 프론트엔드 UX/UI,
+          백엔드 아키텍처를 함께 연구하고 있습니다.
+        </p>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>프로젝트</h2>
-        <div class="project">
-            <h3>AppStore 페이로그</h3>
-            <p>개발 기간: 2개월</p>
-            <p>설명: 앱스토어 관련 프로젝트로 사용자 인터페이스와 기능 구현 중심으로 개발했습니다.</p>
+    <section class="section">
+      <div class="section-title">
+        <span>02</span>
+        <h3>Experience</h3>
+      </div>
+
+      <div class="card experience-card">
+        <div class="experience-header">
+          <div>
+            <h4>신진렌탈 — 1인 외주 앱 개발</h4>
+            <p>LiftCall</p>
+          </div>
+
+          <div class="date">
+            2025.09.01 ~ 2026.03.31
+          </div>
         </div>
-        <div class="project">
-            <h3>SonnoryAI</h3>
-            <p>개발 기간: 3개월</p>
-            <p>설명: AI 기반 서비스 프로젝트로, 백엔드 API와 프론트엔드 통합 작업을 담당했습니다.</p>
-        </div>
-        <div class="project">
-            <h3>리프트콜</h3>
-            <p>개발 기간: 6개월</p>
-            <p>설명: 모빌리티 서비스 프로젝트, 예약 및 호출 기능을 구현했습니다.</p>
-        </div>
-        <div class="project">
-            <h3>Zentra</h3>
-            <p>개발 기간: 2026.03.09 ~ 현재 진행중</p>
-            <p>설명: React + Vite 기반 웹 프로젝트 <a href="https://zentra.kro.kr" target="_blank">사이트 바로가기</a></p>
-        </div>
+
+        <ul>
+          <li>고소작업대 렌탈 서비스 앱 ‘리프트콜(LiftCall)’ 단독 개발</li>
+          <li>React Native + Expo 기반 모바일 앱 개발</li>
+          <li>Node.js + MongoDB 백엔드 구축</li>
+          <li>사용자 / 관리자 권한 시스템 구현</li>
+          <li>App Store / Play Store 출시 완료</li>
+        </ul>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 권다솔</p>
-    </footer>
+    <section class="section">
 
-    <script src="script.js"></script>
+      <div class="section-title">
+        <span>03</span>
+        <h3>Projects</h3>
+      </div>
+
+      <!-- LiftCall -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <div>
+            <h4>LiftCall</h4>
+            <p>고소작업대 렌탈 플랫폼</p>
+          </div>
+
+          <a href="#" class="project-link">
+            View Project
+          </a>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-images">
+            <div class="mockup"></div>
+            <div class="mockup"></div>
+            <div class="mockup"></div>
+          </div>
+
+          <div class="project-description">
+
+            <ul>
+              <li>React Native + Expo 기반 모바일 앱</li>
+              <li>장비 대여 요청 및 관리 기능 구현</li>
+              <li>JWT 인증 시스템 구축</li>
+              <li>실제 외주 서비스 운영 경험</li>
+            </ul>
+
+            <div class="stack">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>AWS S3</span>
+            </div>
+
+            <div class="trouble">
+              <h5>트러블 슈팅</h5>
+
+              <p>
+                App Store 심사 과정에서 In-App Purchase 및
+                메타데이터 검수 문제가 발생했습니다.
+              </p>
+
+              <p>
+                App Store Connect 구조와 심사 가이드를 분석하고,
+                플랫폼별 예외 처리 로직을 수정하여
+                최종적으로 App Store / Play Store 모두 배포 완료했습니다.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Paylog -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <div>
+            <h4>Paylog</h4>
+            <p>근무 기록 및 급여 관리 앱</p>
+          </div>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-images">
+            <div class="mockup"></div>
+            <div class="mockup"></div>
+          </div>
+
+          <div class="project-description">
+
+            <ul>
+              <li>근무 시간 및 급여 계산 기능 구현</li>
+              <li>주급 / 월급 자동 계산 로직 개발</li>
+              <li>사용자 중심 UI/UX 설계</li>
+            </ul>
+
+            <div class="stack">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SonnoryAI -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <div>
+            <h4>SonnoryAI</h4>
+            <p>AI 기반 녹음 정리 및 요약 서비스</p>
+          </div>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-images">
+            <div class="mockup"></div>
+            <div class="mockup"></div>
+            <div class="mockup"></div>
+          </div>
+
+          <div class="project-description">
+
+            <ul>
+              <li>음성 녹음 및 AI 요약 기능 구현</li>
+              <li>OpenAI 기반 텍스트 처리 시스템 연동</li>
+              <li>모바일 중심 UX/UI 설계</li>
+            </ul>
+
+            <div class="stack">
+              <span>React Native</span>
+              <span>OpenAI API</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+
+            <div class="trouble">
+              <h5>트러블 슈팅</h5>
+
+              <p>
+                iOS 빌드 환경에서 CocoaPods 및
+                Native Module 충돌 문제가 발생했습니다.
+              </p>
+
+              <p>
+                Pod 설정과 Native Module 구조를 재구성하여
+                App Store 배포를 완료했습니다.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>04</span>
+        <h3>Skills</h3>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h4>Backend</h4>
+
+          <ul>
+            <li>REST API 설계 및 구현</li>
+            <li>JWT 인증 시스템 구축</li>
+            <li>MongoDB 데이터 구조 설계</li>
+            <li>실제 서비스 배포 경험</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h4>Frontend</h4>
+
+          <ul>
+            <li>React / React Native 기반 UI 구현</li>
+            <li>Expo 기반 앱 개발 및 배포</li>
+            <li>모바일 중심 UX/UI 설계</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h4>Infra & Deploy</h4>
+
+          <ul>
+            <li>AWS S3 구축 경험</li>
+            <li>Netlify 웹 배포</li>
+            <li>Cloudtype 서버 운영</li>
+            <li>App Store / Play Store 배포</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 KWONDASOL Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
