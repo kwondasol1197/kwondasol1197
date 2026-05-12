@@ -1,21 +1,25 @@
-// script.js
+const revealElements = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15
+  }
+);
 
-  const cards = document.querySelectorAll(
-    ".card, .project-card, .skill-card"
-  );
+revealElements.forEach(element => observer.observe(element));
 
-  cards.forEach(card => {
+const cursorGlow = document.querySelector(".cursor-glow");
 
-    const top = card.getBoundingClientRect().top;
-
-    if(top < window.innerHeight - 100){
-      card.classList.add("show");
-    }
-
-  });
-
+window.addEventListener("mousemove", event => {
+  cursorGlow.style.left = `${event.clientX}px`;
+  cursorGlow.style.top = `${event.clientY}px`;
 });
 
 console.log("KWONDASOL PORTFOLIO LOADED");
