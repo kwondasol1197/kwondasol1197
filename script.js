@@ -3,6 +3,17 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("section[id]");
 const heroPanel = document.querySelector(".hero-panel");
 
+const showVisibleReveals = () => {
+  revealElements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+
+    if (isVisible) {
+      element.classList.add("show");
+    }
+  });
+};
+
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -17,6 +28,11 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach(element => observer.observe(element));
+requestAnimationFrame(showVisibleReveals);
+window.addEventListener("load", showVisibleReveals);
+window.addEventListener("hashchange", () => {
+  requestAnimationFrame(showVisibleReveals);
+});
 
 const cursorGlow = document.querySelector(".cursor-glow");
 
